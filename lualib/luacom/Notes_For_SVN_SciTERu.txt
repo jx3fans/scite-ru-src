@@ -1,0 +1,4 @@
+ƒокументы (на английском €зыке) и демки лежат
+в копии оригинальной версии luaCOM:
+http(s)://scite-ru.googlecode.com/svn/original_luacom/doc
+http(s)://scite-ru.googlecode.com/svn/original_luacom/demo

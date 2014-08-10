@@ -1,0 +1,11 @@
+# SciTE session file
+
+buffer.1.path=.\SciTEGlobal.properties
+buffer.1.position=833
+buffer.1.current=1
+buffer.1.bookmarks=16
+buffer.1.folds=117,137,148,164,184,204,217,232,252,270,293,334,405,426,449,460,479,498,525,957,1062,1078,1124,1143,1258,1281,1306,1378,1439,1444
+
+buffer.2.path=.\tools\SciTEStartup.lua
+buffer.2.position=1
+buffer.2.bookmarks=87
