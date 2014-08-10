@@ -1161,7 +1161,12 @@ void SciTEBase::ReadProperties() {
 	int iAscent = 0;
 	int iDescent = 0;
 	int lineSpacing = props.GetInt("line.spacing", 2);
-	lineSpacing = min(max(lineSpacing,0),64);
+	if(lineSpacing < 0){
+		lineSpacing = 0;
+	}
+	if(lineSpacing > 64){
+		lineSpacing = 64;
+	}
 	if (lineSpacing % 2) {
 		iAscent++;
 		lineSpacing--;
