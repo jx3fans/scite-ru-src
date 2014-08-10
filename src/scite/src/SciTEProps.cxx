@@ -1157,6 +1157,22 @@ void SciTEBase::ReadProperties() {
 
 	SetLineNumberWidth();
 
+	//ÐÐ¾à
+	int iAscent = 0;
+	int iDescent = 0;
+	int lineSpacing = props.GetInt("line.spacing", 2);
+	lineSpacing = min(max(lineSpacing,0),64);
+	if (lineSpacing % 2) {
+		iAscent++;
+		lineSpacing--;
+	}
+	iAscent += lineSpacing / 2;
+	iDescent += lineSpacing / 2;
+	wEditor.Call(SCI_SETEXTRAASCENT, iAscent);
+	wEditor.Call(SCI_SETEXTRADESCENT, iDescent);
+	//SendMessage(hwnd,SCI_SETEXTRAASCENT,(WPARAM)iAscent,0);
+	//SendMessage(hwnd,SCI_SETEXTRADESCENT,(WPARAM)iDescent,0);
+
 	bufferedDraw = props.GetInt("buffered.draw", 1);
 	wEditor.Call(SCI_SETBUFFEREDDRAW, bufferedDraw);
 
