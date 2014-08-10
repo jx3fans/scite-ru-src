@@ -3,7 +3,7 @@ REM for make debug version use:
 REM >make_with_MinGW.bat DEBUG
 
 setlocal
-set PATH=C:\MinGW\bin;%PATH%;
+set PATH=E:\CodeBlocks\MinGW\bin;%PATH%;
 
 if "%1"=="DEBUG" set DEBUG=1
 
